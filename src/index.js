@@ -6,7 +6,7 @@ import { render } from 'react-dom'
 import App from './components/App'
 
 // 👉 Importing our styles
-import './styles.less'
+import './styles.css'
 
 render(
   <App />,
