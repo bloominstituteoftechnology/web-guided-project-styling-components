@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BASE_URL, API_KEY } from '../constants'
 import Details from './Details'
+import Friend from './Friend'
 
 export default function App() {
   const [friends, setFriends] = useState([])
@@ -25,21 +26,12 @@ export default function App() {
       })
   }, [])
 
-  const Friend = ({ info }) => (
-    <div className='friend'>
-      {info.name}
-      <button onClick={() => openDetails(info.id)}>
-        See details
-      </button>
-    </div>
-  )
-
   return (
     <div className='container'>
       <h1>My friends:</h1>
       {
         friends.map(fr => {
-          return <Friend key={fr.id} info={fr} />
+          return <Friend key={fr.id} info={fr} action={openDetails} />
         })
       }
       {
