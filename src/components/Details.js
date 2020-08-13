@@ -28,7 +28,7 @@ export default function Details(props) {
           </ul>
         </>
       }
-      <button big onClick={close}>Close</button>
+      <button onClick={close}>Close</button>
     </div>
   )
 }
