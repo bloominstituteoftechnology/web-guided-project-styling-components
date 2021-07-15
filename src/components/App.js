@@ -6,7 +6,7 @@ import Friend from './Friend'
 
 export default function App() {
   const [friends, setFriends] = useState([])
-  const [currentFriendId, setCurrentFriendId] = useState('1')
+  const [currentFriendId, setCurrentFriendId] = useState(null)
 
   const openDetails = id => {
     setCurrentFriendId(id)
