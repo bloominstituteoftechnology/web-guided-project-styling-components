@@ -39,6 +39,6 @@ function getFriendById(req, res, ctx) {
 }
 
 export const handlers = [
-  rest.get('http://buddies.com/api/friends/:id', getFriendById),
-  rest.get('http://buddies.com/api/friends', getAllFriends),
+  rest.get('https://buddies.com/api/friends/:id', getFriendById),
+  rest.get('https://buddies.com/api/friends', getAllFriends),
 ]

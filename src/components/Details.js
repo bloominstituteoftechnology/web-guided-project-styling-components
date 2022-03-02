@@ -9,7 +9,7 @@ export default function Details(props) {
   useEffect(() => {
     axios.get(`${BASE_URL}/friends/${friendId}?api_key=${API_KEY}`)
       .then(res => { setDetails(res.data) })
-      .catch(err => { debugger }) // eslint-disable-line
+      .catch(err => { console.error(err) })
   }, [friendId])
 
   return (
