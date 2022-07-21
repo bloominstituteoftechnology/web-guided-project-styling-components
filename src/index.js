@@ -9,7 +9,13 @@ import App from './components/App'
 
 import './styles.css'
 
+import { ThemeProvider } from "styled-components";
+import theme from "./theme";
+
 render(
-  <App />,
+  <ThemeProvider theme={theme}>
+    <App />
+  </ThemeProvider>
+  ,
   document.querySelector('#root')
 )

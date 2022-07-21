@@ -10,11 +10,7 @@ body {
   margin-top: 16px;
   padding: 16px;
 }
-.friend {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-}
+
 button {
   border-radius: 4px;
 }
