@@ -30,8 +30,8 @@ export default function App() {
     <div className='container'>
       <h1>My friends:</h1>
       {
-        friends.map(fr => {
-          return <Friend key={fr.id} info={fr} action={openDetails} />
+        friends.map((fr, idx) => {
+          return <Friend besty={idx % 2 === 0} key={fr.id} info={fr} action={openDetails} />
         })
       }
       {
@@ -40,3 +40,8 @@ export default function App() {
     </div>
   )
 }
+
+// How do I tell if a number is even in JS???
+// num = 4;
+// return true if num is even?
+// num % 2 === 0

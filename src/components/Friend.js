@@ -27,11 +27,15 @@ const StyledFriend = styled.div`
     &:hover {
       background-color: ${pr => pr.theme.secondaryColor};
     }
+
+    &::before {
+      content: "${pr => pr.besty ? '💚' : '😀'}";
+    }
 `
 
-export default function Friend({ info, action }) {
+export default function Friend({ info, action, besty }) {
   return (
-    <StyledFriend className='friend'>
+    <StyledFriend className='friend' besty={besty}>
       {info.name}
       <button onClick={() => action(info.id)}>
         See details
