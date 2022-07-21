@@ -1,9 +1,9 @@
 // theme object here
 export default {
-  primaryColor: "royalblue",
+  primaryColor: "lightslategray",
   secondaryColor: "crimson",
   tertiaryColor: "mediumseagreen",
   black: "black",
-  white: "white",
+  white: "whitesmoke",
   breakpointMobile: "(max-width: 550px)"
 }
